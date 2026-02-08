@@ -940,19 +940,6 @@
                   "new": false,
                   "number": 8,
                   "score": ""
-                },
-                {
-                  "id": "5d99bbe4-b945-4ef5-93d0-4375000ce9bc",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 9,
-                  "score": ""
                 }
               ],
               "trustBoundaryIds": [],
@@ -979,7 +966,17 @@
                 "x": 290,
                 "y": 540
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
