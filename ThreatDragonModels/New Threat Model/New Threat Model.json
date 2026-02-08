@@ -264,12 +264,25 @@
                   "new": false,
                   "number": 1,
                   "score": ""
+                },
+                {
+                  "id": "71248bbf-d38e-4888-8788-464432140197",
+                  "title": "Missing Web Application Logging",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The web application claims that it did not receive data from a process on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
                 "tampering": 0,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -912,125 +925,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User is authenticated",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "User is authenticated"
-            ],
-            "id": "a2959523-cd3f-4261-9398-279f07568297",
-            "source": {
-              "x": 200,
-              "y": 480
-            },
-            "target": {
-              "cell": "81b156d6-5ba7-4418-a48d-ffc09d8b222c",
-              "port": "da9e4ac4-feb5-4529-83f3-27ea68591b01"
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 480
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Insert Feedback Comments",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "3e295079-2efd-44c9-9620-661753ac3d77",
-                  "title": "Feedback Data Tampering",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
-                  "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Insert Feedback Comments"
-            ],
-            "id": "dfd0eeff-2f3d-41b3-96e3-02b70880849c",
-            "source": {
-              "x": 200,
-              "y": 510
-            },
-            "target": {
-              "cell": "81b156d6-5ba7-4418-a48d-ffc09d8b222c",
-              "port": "da9e4ac4-feb5-4529-83f3-27ea68591b01"
-            },
-            "vertices": []
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1214,6 +1108,73 @@
             "shape": "flow",
             "attrs": {
               "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Insert Feedback Comments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3e295079-2efd-44c9-9620-661753ac3d77",
+                  "title": "Feedback Data Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
+                  "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Insert Feedback Comments"
+            ],
+            "id": "dfd0eeff-2f3d-41b3-96e3-02b70880849c",
+            "source": {
+              "x": 200,
+              "y": 510
+            },
+            "target": {
+              "cell": "81b156d6-5ba7-4418-a48d-ffc09d8b222c",
+              "port": "da9e4ac4-feb5-4529-83f3-27ea68591b01"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -1313,12 +1274,64 @@
                 "y": 440
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User is authenticated",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User is authenticated"
+            ],
+            "id": "a2959523-cd3f-4261-9398-279f07568297",
+            "source": {
+              "x": 200,
+              "y": 480
+            },
+            "target": {
+              "cell": "81b156d6-5ba7-4418-a48d-ffc09d8b222c",
+              "port": "da9e4ac4-feb5-4529-83f3-27ea68591b01"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 480
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 6
+    "threatTop": 7
   }
 }
