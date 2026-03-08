@@ -1329,7 +1329,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Client Side"
+                "text": "Client Side\n(Frontend)"
               },
               "body": {
                 "stroke": "red",
@@ -1425,7 +1425,7 @@
             "id": "90ae8243-ada2-4b60-b295-7a639c32d387",
             "data": {
               "type": "tm.Actor",
-              "name": "Client Side",
+              "name": "Client Side\n(Frontend)",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1477,7 +1477,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web Application"
+                "text": "Web Application\nServer"
               },
               "body": {
                 "stroke": "red",
@@ -1573,7 +1573,7 @@
             "id": "c02d3d11-d060-4f88-9097-2ecda2fb2f09",
             "data": {
               "type": "tm.Process",
-              "name": "Web Application",
+              "name": "Web Application\nServer",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1749,13 +1749,6 @@
                 "denialOfService": 2,
                 "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
