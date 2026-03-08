@@ -990,8 +990,8 @@
           },
           {
             "position": {
-              "x": 560,
-              "y": 220
+              "x": 590,
+              "y": 190
             },
             "size": {
               "width": 100,
@@ -1502,9 +1502,67 @@
               "y": 260
             },
             "target": {
-              "x": 473,
-              "y": 360
-            }
+              "cell": "c6e9fe47-6177-4fcf-a62f-29af84fa7cb2",
+              "port": "7a1fe420-0d26-4e7c-a2f5-2c213d87dd3a"
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ebf77d65-c016-40a4-be5b-a496dbc9f457",
+            "source": {
+              "x": 560,
+              "y": 280
+            },
+            "target": {
+              "cell": "a48bb20c-e3ab-4f48-84d1-4d97f5a3896d",
+              "port": "c5c6d7c1-73ca-4574-a571-a3926be59784"
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 440
+              }
+            ]
           }
         ]
       },
