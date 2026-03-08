@@ -1239,7 +1239,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Authenticate \n& Authorize"
+                "text": "Authenticate\n"
               },
               "body": {
                 "stroke": "#333333",
