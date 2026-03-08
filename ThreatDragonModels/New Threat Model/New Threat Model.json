@@ -1146,7 +1146,7 @@
           },
           {
             "position": {
-              "x": 750,
+              "x": 770,
               "y": 225
             },
             "size": {
@@ -2054,8 +2054,8 @@
               "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
             },
             "target": {
-              "cell": "72ceef7f-b4b8-4eb4-b0d9-95ba58abc7df",
-              "port": "ae014fde-3f74-40bc-8514-e65485bc0c72"
+              "cell": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
+              "port": "0031dc62-94eb-405c-b3d5-0cf10b15e867"
             },
             "vertices": [
               {
@@ -2084,7 +2084,7 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 10,
+            "zIndex": 12,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -2106,8 +2106,8 @@
             ],
             "id": "50c80250-4171-4b44-971f-2d6fb39074db",
             "source": {
-              "cell": "72ceef7f-b4b8-4eb4-b0d9-95ba58abc7df",
-              "port": "e362373b-63ac-4ebb-9ec7-45edd9990009"
+              "x": 1140,
+              "y": 380
             },
             "target": {
               "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
@@ -2121,83 +2121,26 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Update Pending Orders",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Update Pending Orders"
-            ],
-            "id": "6fc52ab5-6093-4e28-92e3-66c0cf17a330",
-            "source": {
-              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
-              "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
-            },
-            "target": {
-              "cell": "72ceef7f-b4b8-4eb4-b0d9-95ba58abc7df",
-              "port": "91b44ac4-fa7a-4099-8486-5ad38c993f67"
-            },
-            "vertices": [
-              {
-                "x": 1010,
-                "y": 290
-              }
-            ]
-          },
-          {
             "position": {
-              "x": 1130,
-              "y": 260
+              "x": 1150,
+              "y": 225
             },
             "size": {
-              "width": 150,
-              "height": 90
+              "width": 120,
+              "height": 130
             },
             "attrs": {
               "text": {
-                "text": "MongoDB Database"
+                "text": "MongoDB \nDatabase"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "actor",
+            "shape": "process",
             "ports": {
               "groups": {
                 "top": {
@@ -2264,53 +2207,95 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "ae014fde-3f74-40bc-8514-e65485bc0c72"
+                  "id": "0031dc62-94eb-405c-b3d5-0cf10b15e867"
                 },
                 {
                   "group": "right",
-                  "id": "5277f838-8eaa-4a58-bd0b-62f36da92ab9"
+                  "id": "dab83a5c-42ac-427a-85e3-e84f72559e7d"
                 },
                 {
                   "group": "bottom",
-                  "id": "e362373b-63ac-4ebb-9ec7-45edd9990009"
+                  "id": "749d0125-15ff-4e76-afb5-8e2cb922997b"
                 },
                 {
                   "group": "left",
-                  "id": "91b44ac4-fa7a-4099-8486-5ad38c993f67"
+                  "id": "47c8de99-e44e-48e0-afe5-70cc7d7cf33f"
                 }
               ]
             },
-            "id": "72ceef7f-b4b8-4eb4-b0d9-95ba58abc7df",
-            "zIndex": 11,
+            "id": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
+            "zIndex": 13,
             "data": {
-              "type": "tm.Actor",
-              "name": "MongoDB Database",
+              "type": "tm.Process",
+              "name": "MongoDB \nDatabase",
               "description": "",
-              "isTrustBoundary": false,
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "262d5082-3b4e-4142-8dde-79a4847ff863",
-                  "title": "Staff Account Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "An attacker could impersonate staff to manipulate order statuses,\naccess sales reports, or modify menu items and application\nconfigurations.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 36,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "repudiation": 0
-              }
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Update Pending Orders",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Update Pending Orders"
+            ],
+            "id": "6fc52ab5-6093-4e28-92e3-66c0cf17a330",
+            "source": {
+              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
+              "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
+            },
+            "target": {
+              "cell": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
+              "port": "47c8de99-e44e-48e0-afe5-70cc7d7cf33f"
+            },
+            "vertices": [
+              {
+                "x": 1010,
+                "y": 290
+              }
+            ]
           }
         ]
       },
@@ -2335,6 +2320,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 36
+    "threatTop": 37
   }
 }
