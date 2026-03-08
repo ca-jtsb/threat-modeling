@@ -1391,16 +1391,36 @@
                   "new": false,
                   "number": 35,
                   "score": ""
+                },
+                {
+                  "id": "3911c5ea-59bc-4cef-9090-34fd0986d086",
+                  "title": "Order Data Tampering ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices,\nstatus) in transit or at rest.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 38,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 1,
                 "informationDisclosure": 2,
                 "denialOfService": 2,
                 "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2106,8 +2126,8 @@
             ],
             "id": "50c80250-4171-4b44-971f-2d6fb39074db",
             "source": {
-              "x": 1140,
-              "y": 380
+              "cell": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
+              "port": "749d0125-15ff-4e76-afb5-8e2cb922997b"
             },
             "target": {
               "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
@@ -2141,6 +2161,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -2224,7 +2245,6 @@
               ]
             },
             "id": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "MongoDB \nDatabase",
@@ -2320,6 +2340,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 37
+    "threatTop": 38
   }
 }
