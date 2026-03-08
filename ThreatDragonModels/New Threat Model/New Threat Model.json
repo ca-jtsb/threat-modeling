@@ -2026,135 +2026,29 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Query Pending Orders",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Query Pending Orders"
-            ],
-            "id": "6415bc26-6251-49a1-b9c2-b00c876ca91e",
-            "source": {
-              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
-              "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
-            },
-            "target": {
-              "cell": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
-              "port": "0031dc62-94eb-405c-b3d5-0cf10b15e867"
-            },
-            "vertices": [
-              {
-                "x": 990,
-                "y": 220
-              },
-              {
-                "x": 1070,
-                "y": 220
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 12,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Pending Order Data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Pending Order Data"
-            ],
-            "id": "50c80250-4171-4b44-971f-2d6fb39074db",
-            "source": {
-              "cell": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
-              "port": "749d0125-15ff-4e76-afb5-8e2cb922997b"
-            },
-            "target": {
-              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
-              "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
-            },
-            "vertices": [
-              {
-                "x": 1000,
-                "y": 360
-              }
-            ]
-          },
-          {
             "position": {
-              "x": 1120,
-              "y": 225
+              "x": 1157,
+              "y": 260
             },
             "size": {
-              "width": 120,
-              "height": 130
+              "width": 150,
+              "height": 80
             },
             "attrs": {
               "text": {
-                "text": "MongoDB \nDatabase"
+                "text": "MongoDB Database"
               },
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "process",
-            "zIndex": 13,
+            "shape": "store",
             "ports": {
               "groups": {
                 "top": {
@@ -2221,117 +2115,38 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "0031dc62-94eb-405c-b3d5-0cf10b15e867"
+                  "id": "174d1982-f12c-4438-9b85-ee6f2ca6a6e9"
                 },
                 {
                   "group": "right",
-                  "id": "dab83a5c-42ac-427a-85e3-e84f72559e7d"
+                  "id": "4e0631c3-b068-4f73-8fb7-49e30e4877dd"
                 },
                 {
                   "group": "bottom",
-                  "id": "749d0125-15ff-4e76-afb5-8e2cb922997b"
+                  "id": "507da016-580b-45e4-8a15-97da5a11794b"
                 },
                 {
                   "group": "left",
-                  "id": "47c8de99-e44e-48e0-afe5-70cc7d7cf33f"
+                  "id": "6aab7671-c81c-4b19-bc12-a323324ef69a"
                 }
               ]
             },
-            "id": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
+            "id": "bdd1bffc-ac02-4847-9d73-4f8b59dd9874",
+            "zIndex": 16,
             "data": {
-              "type": "tm.Process",
-              "name": "MongoDB \nDatabase",
+              "type": "tm.Store",
+              "name": "MongoDB Database",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "85b71a22-81d6-4dee-90df-c23fbff2971f",
-                  "title": "Staff Account Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "An attacker could impersonate staff to manipulate order statuses,\naccess sales reports, or modify menu items and application\nconfigurations.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 39,
-                  "score": ""
-                },
-                {
-                  "id": "ba3cffa2-3771-44d0-861e-36fa3a416fc6",
-                  "title": "Order Data Tampering",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attacker could modify order details (e.g., items, quantities, prices,\nstatus) in transit or at rest.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 40,
-                  "score": ""
-                },
-                {
-                  "id": "c686e989-d44d-485e-b569-34139ab8412c",
-                  "title": "Staff Action Repudiation",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "description": "Staff members (Barista, Manager, Administrator) could deny performing\nactions if audit logs are insufficient, not immutable, or can be tampered\nwith.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 41,
-                  "score": ""
-                },
-                {
-                  "id": "516471d9-37d1-4c40-b492-c75a390169a7",
-                  "title": "Staff Credential Disclosure",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "Exposure of usernames, passwords, or session tokens for staff members\ndue to insecure storage or unencrypted transmission.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 42,
-                  "score": ""
-                },
-                {
-                  "id": "a9176f61-4dcc-4ba4-97ea-e2f9e8dd3ed5",
-                  "title": "MongoDB Database DoS ",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Denial of service",
-                  "description": "Malicious or poorly optimized queries could overload the database,\nmaking it unresponsive.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 43,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 2,
-                "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 0
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
             }
           },
           {
@@ -2350,7 +2165,63 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 14,
+            "zIndex": 17,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query Pending Orders",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Query Pending Orders"
+            ],
+            "id": "6415bc26-6251-49a1-b9c2-b00c876ca91e",
+            "source": {
+              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
+              "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
+            },
+            "target": {
+              "cell": "bdd1bffc-ac02-4847-9d73-4f8b59dd9874",
+              "port": "174d1982-f12c-4438-9b85-ee6f2ca6a6e9"
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 220
+              },
+              {
+                "x": 1070,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 18,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -2381,13 +2252,90 @@
               "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
             },
             "target": {
-              "cell": "2ef0245c-74ba-46dd-a489-aa221dc9df1c",
-              "port": "47c8de99-e44e-48e0-afe5-70cc7d7cf33f"
+              "cell": "bdd1bffc-ac02-4847-9d73-4f8b59dd9874",
+              "port": "6aab7671-c81c-4b19-bc12-a323324ef69a"
             },
             "vertices": [
               {
                 "x": 1010,
                 "y": 290
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 19,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pending Order Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Pending Order Data"
+            ],
+            "id": "50c80250-4171-4b44-971f-2d6fb39074db",
+            "source": {
+              "x": 1160,
+              "y": 400
+            },
+            "target": {
+              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
+              "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 360
               }
             ]
           }
