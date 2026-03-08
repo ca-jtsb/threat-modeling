@@ -259,69 +259,8 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "6db2e44c-1553-44ee-95f5-369e63719579",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "title": "T-003 - Web Application Server Spoofing",
-                  "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "cb4744cb-912f-4e81-a193-3ce6031b4f5b",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information Disclosure",
-                  "title": "T-010 - Customer PII Disclosure",
-                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "ffeab5b4-9348-44e3-8866-2fb70ed4ef05",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of Service",
-                  "title": "T-014 - Web Application Server DoS",
-                  "description": "An attacker could flood the Web Application Server with excessive requests, making it unavailable.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "1ba0f243-680b-4cc1-b11e-75b5451c5a18",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Elevation of Privilege",
-                  "title": "T-016 - Customer to Staff Privilege Escalation",
-                  "description": "A customer could exploit a vulnerability to gain unauthorized access to Barista, Manager, or Administrator functionalities.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "af7e88d5-5694-450c-aea1-bf37c15b1d13",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Elevation of Privilege",
-                  "title": "T-018 - Horizontal Privilege Escalation",
-                  "description": "Gaining unauthorized access to another user's account within the same privilege level.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -502,37 +441,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "f980026a-8151-4a5e-9596-386165afb547",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information Disclosure",
-                  "title": "T-010 - Customer PII Disclosure",
-                  "description": "Tokenized payment information and PII transmitted to the Payment Gateway could be intercepted.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "f79d7af5-de1a-45b6-abce-cf1abe07b864",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "title": "T-004 - Order Data Tampering",
-                  "description": "Payment request data could be tampered with in transit to the Payment Gateway.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": []
             },
             "labels": [
@@ -666,45 +580,8 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "ddcfddda-c012-4023-82b6-77c5d01584c7",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "title": "T-004 - Order Data Tampering",
-                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "22fb69bc-6a19-4a7d-8491-d68d9f5abe15",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information Disclosure",
-                  "title": "T-010 - Customer PII Disclosure",
-                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history stored in the database.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "7b22b1b1-fb27-4fa3-96fe-62c7c43403cd",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Denial of Service",
-                  "title": "T-015 - MongoDB Database DoS",
-                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
@@ -737,37 +614,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "bfabe4fb-9c59-4ae5-8324-2ccc754ac6de",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "title": "T-004 - Order Data Tampering",
-                  "description": "Order data could be modified in transit between the customer and the server.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "13c694d5-da9d-4f3e-9391-bc17f81f61cf",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "title": "T-008 - Fraudulent Order Repudiation",
-                  "description": "A customer could deny placing an order if insufficient logging and non-repudiation controls are in place.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": []
             },
             "labels": [
@@ -814,25 +666,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "e195825b-78ef-4489-97ed-c6bf3a3ff50c",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "title": "T-004 - Order Data Tampering",
-                  "description": "The transaction response from the Payment Gateway could be tampered with in transit.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": []
             },
             "labels": [
@@ -879,37 +718,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "ae3d6d6c-5380-4928-a8ed-be86e743ff16",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "title": "T-003 - Web Application Server Spoofing",
-                  "description": "A fraudulent server could intercept or forge the order confirmation response to the customer.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "b2516704-755d-4294-bb03-ff0114120592",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information Disclosure",
-                  "title": "T-010 - Customer PII Disclosure",
-                  "description": "Order confirmation response may contain PII that could be intercepted in transit.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": []
             },
             "labels": [
@@ -956,37 +770,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "9aa77403-8551-44ae-a43b-3378fd95092a",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "title": "T-004 - Order Data Tampering",
-                  "description": "Order and payment data could be tampered with in transit during the write to MongoDB.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                },
-                {
-                  "id": "9ba67138-b906-4416-b593-c471d030259f",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "title": "T-008 - Fraudulent Order Repudiation",
-                  "description": "Insufficient logging of the database write allows repudiation of the order record.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": []
             },
             "labels": [
