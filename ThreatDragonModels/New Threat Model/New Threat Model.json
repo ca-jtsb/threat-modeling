@@ -156,6 +156,19 @@
                   "new": false,
                   "number": 30,
                   "score": ""
+                },
+                {
+                  "id": "d3b2b11a-96e4-43a4-a8bb-a460fa0f869f",
+                  "title": "Customer Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate customer to place fraudulent orders or access their order history.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 37,
+                  "score": ""
                 }
               ],
               "handlesCardPayment": false,
@@ -163,20 +176,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -362,11 +368,13 @@
                 "text": "MongoDB Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -463,13 +471,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "threats": [],
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "9d91b1b2-1806-4f31-a9ae-15679deca993",
+                  "title": "Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                }
+              ],
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
-              "storesInventory": false
+              "storesInventory": false,
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -961,6 +989,19 @@
                   "new": false,
                   "number": 26,
                   "score": ""
+                },
+                {
+                  "id": "b977302b-8270-41f7-8626-1b15229d3c43",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 34,
+                  "score": ""
                 }
               ],
               "trustBoundaryIds": [],
@@ -1183,37 +1224,7 @@
                 "x": 380,
                 "y": 230
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           }
         ]
       },
@@ -1247,6 +1258,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 30
+    "threatTop": 38
   }
 }
