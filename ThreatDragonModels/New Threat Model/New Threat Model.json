@@ -1749,13 +1749,6 @@
                 "denialOfService": 2,
                 "elevationOfPrivilege": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2020,7 +2013,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Display Data",
+              "name": "Display Formatted \nSales Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2034,7 +2027,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Display Data"
+              "Display Formatted \nSales Data"
             ],
             "id": "f8930634-2041-45f6-958f-a1cdd826d5c9",
             "source": {
