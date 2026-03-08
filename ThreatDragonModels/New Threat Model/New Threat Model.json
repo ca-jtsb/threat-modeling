@@ -1414,7 +1414,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Authentic"
+                "text": "Authenticate \n& Authorize"
               },
               "body": {
                 "stroke": "#333333",
@@ -2122,7 +2122,7 @@
           },
           {
             "position": {
-              "x": 1150,
+              "x": 1120,
               "y": 225
             },
             "size": {
