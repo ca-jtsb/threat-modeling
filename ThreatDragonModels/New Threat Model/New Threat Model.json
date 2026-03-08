@@ -308,7 +308,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "initiates payment\nrequest",
+              "name": "Tokenized payment request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -322,7 +322,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "initiates payment\nrequest"
+              "Tokenized payment request"
             ],
             "id": "a085e19d-29d6-4275-8da9-49892761432e",
             "source": {
@@ -333,7 +333,12 @@
               "cell": "96e71717-495e-4e66-be53-2acebb654622",
               "port": "5bdf18b6-99dc-46a6-a688-fc6f171d29e6"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 690,
+                "y": 340
+              }
+            ]
           },
           {
             "position": {
@@ -479,7 +484,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "sends transaction\nresponse",
+              "name": "Transaction response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -493,7 +498,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "sends transaction\nresponse"
+              "Transaction response"
             ],
             "id": "e3fc7fcb-7b75-4104-a1c5-dd381ffa63e3",
             "source": {
@@ -506,7 +511,7 @@
             },
             "vertices": [
               {
-                "x": 591,
+                "x": 690,
                 "y": 470
               }
             ]
@@ -577,7 +582,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "record order &\npayment status",
+              "name": "Record order &\npayment status",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -591,7 +596,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "record order &\npayment status"
+              "Record order &\npayment status"
             ],
             "id": "bd2b25a7-2984-4807-9269-a11a87cd0784",
             "source": {
@@ -604,8 +609,8 @@
             },
             "vertices": [
               {
-                "x": 411,
-                "y": 215
+                "x": 380,
+                "y": 230
               }
             ]
           },
@@ -1038,6 +1043,58 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Order confirmation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Order confirmation"
+            ],
+            "id": "83f88c11-3241-4597-bb24-08bc9fcdee50",
+            "source": {
+              "x": 350,
+              "y": 380
+            },
+            "target": {
+              "cell": "986108c6-e6af-407d-b9a2-cd4b4d8a6bc0",
+              "port": "3257a636-36f0-4c36-be1c-b42b34ec9184"
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 460
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 22,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1054,14 +1111,14 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "83f88c11-3241-4597-bb24-08bc9fcdee50",
+            "id": "2760aff0-bd0c-43b2-9968-bb72fcc2ac06",
             "source": {
-              "x": 350,
-              "y": 380
+              "x": 440,
+              "y": 120
             },
             "target": {
-              "cell": "986108c6-e6af-407d-b9a2-cd4b4d8a6bc0",
-              "port": "3257a636-36f0-4c36-be1c-b42b34ec9184"
+              "cell": "9864a720-9459-406f-927d-ea28441489bb",
+              "port": "9ca631d5-ec47-4d7f-8eef-b0a86da094b3"
             }
           }
         ]
