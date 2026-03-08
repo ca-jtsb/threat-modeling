@@ -986,6 +986,58 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Forward order request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Forward order request"
+            ],
+            "id": "709897ad-056b-460d-9261-9c522aabe20d",
+            "source": {
+              "x": 30,
+              "y": 400
+            },
+            "target": {
+              "cell": "9864a720-9459-406f-927d-ea28441489bb",
+              "port": "48bcef40-0549-49f0-af18-4332ac35d6c0"
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 21,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1002,14 +1054,14 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "709897ad-056b-460d-9261-9c522aabe20d",
+            "id": "83f88c11-3241-4597-bb24-08bc9fcdee50",
             "source": {
-              "x": 30,
-              "y": 400
+              "x": 350,
+              "y": 380
             },
             "target": {
-              "cell": "9864a720-9459-406f-927d-ea28441489bb",
-              "port": "48bcef40-0549-49f0-af18-4332ac35d6c0"
+              "cell": "986108c6-e6af-407d-b9a2-cd4b4d8a6bc0",
+              "port": "3257a636-36f0-4c36-be1c-b42b34ec9184"
             }
           }
         ]
