@@ -1677,7 +1677,7 @@
           },
           {
             "position": {
-              "x": 485,
+              "x": 435,
               "y": 157.0000000000001
             },
             "size": {
@@ -1686,7 +1686,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Process and \nFormat Data"
+                "text": "Process and \nFormat Sales Data"
               },
               "body": {
                 "stroke": "#333333",
@@ -1782,7 +1782,7 @@
             "id": "5d3d836b-7182-4292-8076-c1074273c081",
             "data": {
               "type": "tm.Process",
-              "name": "Process and \nFormat Data",
+              "name": "Process and \nFormat Sales Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2007,7 +2007,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Auth Response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2021,7 +2021,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Auth Response"
             ],
             "id": "662a184f-fd02-44fa-9bb9-d2cb53e64caf",
             "source": {
@@ -2031,6 +2031,332 @@
             "target": {
               "cell": "c02d3d11-d060-4f88-9097-2ecda2fb2f09",
               "port": "43188d07-afde-4e3c-ba86-5a78d1657508"
+            },
+            "vertices": [
+              {
+                "x": 570,
+                "y": -140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query Sales Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Query Sales Data"
+            ],
+            "id": "870ae136-b1a1-465a-9292-95efe9c5b3ee",
+            "source": {
+              "x": 570,
+              "y": 10
+            },
+            "target": {
+              "cell": "776e05bf-db38-451d-b886-43c5d241eba5",
+              "port": "25759cf1-5aa8-4ff0-8155-668d2d475810"
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": -30
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Raw Sales Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Raw Sales Data"
+            ],
+            "id": "668dd509-eddd-4bc7-abf8-67a6e45183c6",
+            "source": {
+              "x": 710,
+              "y": 10
+            },
+            "target": {
+              "cell": "c02d3d11-d060-4f88-9097-2ecda2fb2f09",
+              "port": "d851eb37-ea4d-4626-a757-c6793ddf8de3"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Raw Sales Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Raw Sales Data"
+            ],
+            "id": "b920693b-b766-4275-a688-bccfc7ac60aa",
+            "source": {
+              "cell": "c02d3d11-d060-4f88-9097-2ecda2fb2f09",
+              "port": "76807ec9-e57d-4b5e-a732-fd8c24047d22"
+            },
+            "target": {
+              "cell": "5d3d836b-7182-4292-8076-c1074273c081",
+              "port": "43188d07-afde-4e3c-ba86-5a78d1657508"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Formatted \nSales Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Formatted \nSales Data"
+            ],
+            "id": "cc6ea689-99f7-4518-ac43-fc36a19966c4",
+            "source": {
+              "cell": "5d3d836b-7182-4292-8076-c1074273c081",
+              "port": "c7849893-515d-406c-9fe2-2d143b7bdd14"
+            },
+            "target": {
+              "cell": "90ae8243-ada2-4b60-b295-7a639c32d387",
+              "port": "0a711a08-3e82-4b27-883a-fbba4bee7ab3"
+            }
+          },
+          {
+            "position": {
+              "x": 709,
+              "y": -20
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "MongoDB \nDatabase"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "fa7ef2c9-9a1a-4322-90f0-f8aba85696f6"
+                },
+                {
+                  "group": "right",
+                  "id": "b02648dc-17f2-4e25-b4c8-4a02e7e5fa36"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b9207f8c-a07c-4434-8450-1139c3ba663a"
+                },
+                {
+                  "group": "left",
+                  "id": "25759cf1-5aa8-4ff0-8155-668d2d475810"
+                }
+              ]
+            },
+            "id": "776e05bf-db38-451d-b886-43c5d241eba5",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "MongoDB \nDatabase",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
             }
           }
         ]
