@@ -1350,8 +1350,8 @@
           },
           {
             "position": {
-              "x": 1218,
-              "y": 285
+              "x": 1108,
+              "y": 250
             },
             "size": {
               "width": 130,
@@ -1976,7 +1976,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Query Pending Orders",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1990,17 +1990,27 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Query Pending Orders"
             ],
-            "id": "6fc52ab5-6093-4e28-92e3-66c0cf17a330",
+            "id": "6415bc26-6251-49a1-b9c2-b00c876ca91e",
             "source": {
               "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
               "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
             },
             "target": {
               "cell": "c0a7331f-8849-401f-9434-0c95fff6201f",
-              "port": "06dc8c68-50b8-4aa4-8126-3ace602089e8"
-            }
+              "port": "bceb4473-6498-4357-9e7c-3f18c3b5eb57"
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 220
+              },
+              {
+                "x": 1070,
+                "y": 220
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2040,8 +2050,8 @@
             ],
             "id": "50c80250-4171-4b44-971f-2d6fb39074db",
             "source": {
-              "x": 1060,
-              "y": 390
+              "cell": "c0a7331f-8849-401f-9434-0c95fff6201f",
+              "port": "c46a6a93-60ea-4ecc-bf10-9e3ccae2bdc4"
             },
             "target": {
               "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
@@ -2049,8 +2059,8 @@
             },
             "vertices": [
               {
-                "x": 1010,
-                "y": 340
+                "x": 1000,
+                "y": 360
               }
             ]
           },
@@ -2074,7 +2084,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Query Pending Orders",
+              "name": "Update Pending Orders",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2088,27 +2098,18 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Query Pending Orders"
+              "Update Pending Orders"
             ],
-            "id": "6415bc26-6251-49a1-b9c2-b00c876ca91e",
+            "id": "6fc52ab5-6093-4e28-92e3-66c0cf17a330",
             "source": {
               "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
               "port": "0a4c73da-af46-4203-86f1-363b38f05f32"
             },
             "target": {
-              "x": 1190,
-              "y": 130
+              "cell": "c0a7331f-8849-401f-9434-0c95fff6201f",
+              "port": "06dc8c68-50b8-4aa4-8126-3ace602089e8"
             },
-            "vertices": [
-              {
-                "x": 1010,
-                "y": 250
-              },
-              {
-                "x": 1100,
-                "y": 170
-              }
-            ]
+            "vertices": []
           }
         ]
       },
