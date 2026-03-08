@@ -991,7 +991,7 @@
           {
             "position": {
               "x": 360,
-              "y": 225
+              "y": 220
             },
             "size": {
               "width": 120,
@@ -1106,7 +1106,8 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            }
+            },
+            "children": []
           },
           {
             "position": {
@@ -2055,7 +2056,7 @@
             "vertices": [
               {
                 "x": 610,
-                "y": 360
+                "y": 390
               }
             ]
           },
@@ -2106,12 +2107,8 @@
             },
             "vertices": [
               {
-                "x": 510,
-                "y": 270
-              },
-              {
                 "x": 600,
-                "y": 220
+                "y": 200
               }
             ]
           }
