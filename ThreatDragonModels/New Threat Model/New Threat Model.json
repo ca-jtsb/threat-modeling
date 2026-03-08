@@ -571,8 +571,8 @@
                 "text": "Customer"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -692,8 +692,8 @@
                 "text": "Browser Client\n(Frontend)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -811,7 +811,7 @@
                 },
                 {
                   "id": "ae1de1aa-aa98-4ff4-a556-9cad0a46a79e",
-                  "title": "Web Application Spoofing",
+                  "title": "Web Application Server Spoofing",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
@@ -824,7 +824,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -1388,13 +1388,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
