@@ -1939,6 +1939,34 @@
                 "y": 340
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "8c2b283d-8320-48e6-8b15-54fc129f604b",
+            "source": {
+              "x": 690,
+              "y": 170
+            },
+            "target": {
+              "x": 690,
+              "y": 460
+            }
           }
         ]
       },
