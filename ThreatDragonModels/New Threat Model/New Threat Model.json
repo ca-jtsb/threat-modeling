@@ -15,7 +15,7 @@
         "diagramType": "STRIDE",
         "placeholder": "DF1 - Customer Places an Order",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.0",
+        "version": "2.5.0",
         "cells": [
           {
             "position": {
@@ -869,20 +869,38 @@
         "diagramType": "STRIDE",
         "placeholder": "DF2 - Barista Updates Order Status",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
+      },
+      {
+        "id": 2,
+        "title": "DF3 - Manager Accesses Basic Sales Reports",
+        "diagramType": "STRIDE",
+        "placeholder": "DF3 - Manager Accesses Basic Sales Reports",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
+      },
+      {
+        "id": 3,
+        "title": "DF4 - Administrator Adds New Menu Item",
+        "diagramType": "STRIDE",
+        "placeholder": "DF4 - Administrator Adds New Menu Item",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.0",
         "cells": [
           {
             "position": {
-              "x": 260,
-              "y": 250
+              "x": 49.9999999999998,
+              "y": 295
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 210,
+              "height": 100
             },
             "attrs": {
               "text": {
-                "text": "Barista"
+                "text": "Administrator"
               },
               "body": {
                 "stroke": "#333333",
@@ -892,7 +910,6 @@
             },
             "visible": true,
             "shape": "actor",
-            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -959,26 +976,27 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "de4d7bce-fa4b-44e1-b363-0f6f61294250"
+                  "id": "b41ad01c-b8ca-41ab-9a73-397415f58c1d"
                 },
                 {
                   "group": "right",
-                  "id": "c5c6d7c1-73ca-4574-a571-a3926be59784"
+                  "id": "9c37444b-00fc-4238-b957-b9b58288c036"
                 },
                 {
                   "group": "bottom",
-                  "id": "7df0ec4b-b23d-4b3a-9690-6f27b5d7d5e3"
+                  "id": "a23ce6dc-2129-4964-b2f7-9b5657976f7d"
                 },
                 {
                   "group": "left",
-                  "id": "d36b6beb-df8d-4bcb-8daa-7e228c9ae806"
+                  "id": "9cbac477-72d6-44d3-bbdd-2be7dbf60e44"
                 }
               ]
             },
-            "id": "a48bb20c-e3ab-4f48-84d1-4d97f5a3896d",
+            "id": "c5438c83-a83c-44d3-b1dd-b09751a103c1",
+            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Barista",
+              "name": "Administrator",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -990,17 +1008,20 @@
           },
           {
             "position": {
-              "x": 590,
-              "y": 220
+              "x": 570,
+              "y": 290
             },
             "size": {
-              "width": 100,
-              "height": 120
+              "width": 120,
+              "height": 110
             },
             "attrs": {
+              "text": {
+                "text": "Client Side"
+              },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1073,51 +1094,115 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "99f15170-f5ea-4d96-b0d1-84513f23f231"
+                  "id": "3f3b5fb9-526e-4d7b-8a68-026d6e721441"
                 },
                 {
                   "group": "right",
-                  "id": "0a4c73da-af46-4203-86f1-363b38f05f32"
+                  "id": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
                 },
                 {
                   "group": "bottom",
-                  "id": "c6a265e5-3889-47f6-80b5-84e182e534bc"
+                  "id": "dd685683-41ae-4eea-86d0-b4180607fd7b"
                 },
                 {
                   "group": "left",
-                  "id": "7a1fe420-0d26-4e7c-a2f5-2c213d87dd3a"
+                  "id": "979f29a4-8792-49e7-b859-55c7eb18f822"
                 }
               ]
             },
-            "id": "c6e9fe47-6177-4fcf-a62f-29af84fa7cb2",
+            "id": "4d14ba0c-aa91-42e0-bcdc-173c7708c273",
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Client Side",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "43aad8d5-0d60-4d5c-b35d-5202fc98865a",
+                  "title": "Customer to Staff Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Elevation of privilege",
+                  "description": "A customer could exploit vulnerabilities in the client interface to gain staff-level privileges and access staff-only features.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": "3"
+                },
+                {
+                  "id": "f50081aa-b68d-4712-9bcf-aeae20b0e0a2",
+                  "title": "Staff Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate staff to manipulate order statuses, access sales reports, or modify menu items and application configurations.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "5"
+                },
+                {
+                  "id": "053307b9-3380-4bd4-8837-7a4e02e8943d",
+                  "title": "Customer Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate customer to place fraudulent orders or access their order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": "5"
+                },
+                {
+                  "id": "e6e594c1-d8fd-4021-b4a9-2e832e65f037",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": "4"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 4,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
             "position": {
-              "x": 810,
-              "y": 200
+              "x": 970,
+              "y": 285
             },
             "size": {
-              "width": 100,
-              "height": 120
+              "width": 110,
+              "height": 110
             },
             "attrs": {
+              "text": {
+                "text": "Web Application\nServer"
+              },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1190,56 +1275,255 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "99f15170-f5ea-4d96-b0d1-84513f23f231"
+                  "id": "3f3b5fb9-526e-4d7b-8a68-026d6e721441"
                 },
                 {
                   "group": "right",
-                  "id": "0a4c73da-af46-4203-86f1-363b38f05f32"
+                  "id": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
                 },
                 {
                   "group": "bottom",
-                  "id": "c6a265e5-3889-47f6-80b5-84e182e534bc"
+                  "id": "dd685683-41ae-4eea-86d0-b4180607fd7b"
                 },
                 {
                   "group": "left",
-                  "id": "7a1fe420-0d26-4e7c-a2f5-2c213d87dd3a"
+                  "id": "979f29a4-8792-49e7-b859-55c7eb18f822"
                 }
               ]
             },
-            "id": "55c0ded0-a3c7-4a3e-90af-649806332588",
+            "id": "858db7f4-f296-4f1c-9a50-45573d107f7c",
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Web Application\nServer",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "02b6cb68-5dbf-4a1a-9340-34fcac757673",
+                  "title": "Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": "7"
+                },
+                {
+                  "id": "104368e4-76da-4f28-8327-3b31d2a4e9f4",
+                  "title": "Web Application Server DoS",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the web application server with requests, preventing legitimate administrative actions such as menu updates.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": "10"
+                },
+                {
+                  "id": "97b65934-d8c1-462e-9088-3b119dc394a7",
+                  "title": "Menu Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions) before it is stored in the database.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": "6"
+                },
+                {
+                  "id": "e4a6431d-bf06-43a3-85f1-7be9816b4c15",
+                  "title": "Sales Report Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": "6"
+                },
+                {
+                  "id": "2ca3b68c-905e-4dbf-bcc6-d3f356c826e9",
+                  "title": "Application Code/Configuration Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Malicious modification of the application's source code, server configurations, or environment variables could introduce backdoors or disable security features.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": "6"
+                },
+                {
+                  "id": "7640984a-c947-4e4c-a9f9-b045a5ba2993",
+                  "title": "Fraudulent Order Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non-repudiation controls are in place.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": "5"
+                },
+                {
+                  "id": "dcd2ea16-9999-406c-b26d-fdc2fc56e3cc",
+                  "title": "Staff Action Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Staff members could deny performing actions if audit logs are insufficient, not immutable, or can be tampered with.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 35,
+                  "score": "5"
+                },
+                {
+                  "id": "e963e876-26d1-4290-87c0-7c6a3f0587ae",
+                  "title": "Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": "7"
+                },
+                {
+                  "id": "a9ebbde5-8490-42b9-96a7-e8ad1c7ec36a",
+                  "title": "Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 37,
+                  "score": "5"
+                },
+                {
+                  "id": "04b810dc-f148-41c5-9d7c-748f45d497e1",
+                  "title": "Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of source code, server configurations, environment variables, or API keys.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 38,
+                  "score": "6"
+                },
+                {
+                  "id": "524a0994-450d-42b1-b2a0-f6e19fd0981c",
+                  "title": "Sales Data Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 39,
+                  "score": "6"
+                },
+                {
+                  "id": "098bc302-0791-4ba4-b8e3-d40ec836b043",
+                  "title": "Customer to Staff Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Elevation of privilege",
+                  "description": "A customer could exploit a vulnerability to gain unauthorized access to Barista, Manager, or Administrator functionalities.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": "3"
+                },
+                {
+                  "id": "8f0d7a03-09a3-4551-a5a4-e246641ef93c",
+                  "title": "Barista/Manager to Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator privileges.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 41,
+                  "score": "3"
+                },
+                {
+                  "id": "5fbe95a3-69be-4845-ba61-28fea32ac4fb",
+                  "title": "Horizontal Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Elevation of privilege",
+                  "description": "Gaining unauthorized access to another user's account within the same privilege level.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 42,
+                  "score": "4"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 5,
+                "repudiation": 2,
+                "informationDisclosure": 3,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 4
+              }
             }
           },
           {
             "position": {
-              "x": 760,
-              "y": -90
+              "x": 1370,
+              "y": 305
             },
             "size": {
-              "width": 100,
-              "height": 120
+              "width": 150,
+              "height": 80
             },
             "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+              "text": {
+                "text": "MongoDB Database"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "process",
+            "shape": "store",
             "zIndex": 4,
             "ports": {
               "groups": {
@@ -1307,60 +1591,758 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "99f15170-f5ea-4d96-b0d1-84513f23f231"
+                  "id": "9161dbec-eabc-450a-a783-009c7de0e90e"
                 },
                 {
                   "group": "right",
-                  "id": "0a4c73da-af46-4203-86f1-363b38f05f32"
+                  "id": "6e63882d-7f73-42ea-8b2c-597f1b3b2dea"
                 },
                 {
                   "group": "bottom",
-                  "id": "c6a265e5-3889-47f6-80b5-84e182e534bc"
+                  "id": "9643f3a5-6611-42a9-a51c-40e81b95306a"
                 },
                 {
                   "group": "left",
-                  "id": "7a1fe420-0d26-4e7c-a2f5-2c213d87dd3a"
+                  "id": "65a13501-a9a2-4205-b461-1b7264b38c74"
                 }
               ]
             },
-            "id": "f775f73b-b304-4bbf-88c4-7836112991ec",
+            "id": "7b1aaa4c-bc84-467c-b27c-23918517bcaa",
             "data": {
-              "type": "tm.Process",
-              "name": "Process",
+              "type": "tm.Store",
+              "name": "MongoDB Database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "2c31debb-0a18-410f-a545-268d9f395f33",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": "4"
+                },
+                {
+                  "id": "2f8c41ba-b780-4ae1-86d1-1d16b41d5566",
+                  "title": "Order Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could modify order details (e.g., items, quantities, prices, status) in transit or at rest.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 43,
+                  "score": "7"
+                },
+                {
+                  "id": "64e12493-e614-4993-a8c7-2998381642cd",
+                  "title": "Menu Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions) before it is stored in the database.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 44,
+                  "score": "6"
+                },
+                {
+                  "id": "9c5684a3-c288-4e18-b72c-e19d1711cdd4",
+                  "title": "Sales Report Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 45,
+                  "score": "6"
+                },
+                {
+                  "id": "89113772-8835-49ef-9648-967c426be666",
+                  "title": "Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery addresses, and order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 46,
+                  "score": "7"
+                },
+                {
+                  "id": "579a2698-a1e4-42c9-8dcc-3c9e2571025e",
+                  "title": "Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members due to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 47,
+                  "score": "5"
+                },
+                {
+                  "id": "2da8d26f-81fc-4bd4-9829-52c2db5a8498",
+                  "title": "Sales Data Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to sales reports or underlying aggregated sales data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 48,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "repudiation": 0,
+                "informationDisclosure": 3,
+                "denialOfService": 2
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log In Credentials\n",
+              "description": "Enter new menu item details",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Log In Credentials\n"
+            ],
+            "id": "0a9d10db-dc33-44df-86e4-cbe12f798de9",
+            "source": {
+              "cell": "c5438c83-a83c-44d3-b1dd-b09751a103c1",
+              "port": "9c37444b-00fc-4238-b957-b9b58288c036"
+            },
+            "target": {
+              "cell": "4d14ba0c-aa91-42e0-bcdc-173c7708c273",
+              "port": "979f29a4-8792-49e7-b859-55c7eb18f822"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "UI showing Menu Item \nCreated Successfully",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "UI showing Menu Item \nCreated Successfully"
+            ],
+            "id": "4ab1bcd1-f619-47f1-9f0c-cf9b2e205480",
+            "source": {
+              "cell": "4d14ba0c-aa91-42e0-bcdc-173c7708c273",
+              "port": "979f29a4-8792-49e7-b859-55c7eb18f822"
+            },
+            "target": {
+              "cell": "c5438c83-a83c-44d3-b1dd-b09751a103c1",
+              "port": "9c37444b-00fc-4238-b957-b9b58288c036"
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Menu Item Details",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Menu Item Details"
+            ],
+            "id": "7e0d49cf-6c83-438f-a221-5aa572af391b",
+            "source": {
+              "cell": "4d14ba0c-aa91-42e0-bcdc-173c7708c273",
+              "port": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
+            },
+            "target": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "979f29a4-8792-49e7-b859-55c7eb18f822"
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 240
+              },
+              {
+                "x": 870,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login Request"
+            ],
+            "id": "111452c3-9aa7-47d9-80d2-e413d9fbef76",
+            "source": {
+              "cell": "4d14ba0c-aa91-42e0-bcdc-173c7708c273",
+              "port": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
+            },
+            "target": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "979f29a4-8792-49e7-b859-55c7eb18f822"
+            },
+            "vertices": [
+              {
+                "x": 820,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Session Token (JWT)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Session Token (JWT)"
+            ],
+            "id": "db036b52-2a9c-4095-864c-cb520927abf2",
+            "source": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "979f29a4-8792-49e7-b859-55c7eb18f822"
+            },
+            "target": {
+              "cell": "4d14ba0c-aa91-42e0-bcdc-173c7708c273",
+              "port": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
+            },
+            "vertices": [
+              {
+                "x": 820,
+                "y": 450
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Successful Menu Item\nCreation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Successful Menu Item\nCreation"
+            ],
+            "id": "5f209b31-edeb-4c10-b8eb-1560408c3021",
+            "source": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "979f29a4-8792-49e7-b859-55c7eb18f822"
+            },
+            "target": {
+              "cell": "4d14ba0c-aa91-42e0-bcdc-173c7708c273",
+              "port": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
+            },
+            "vertices": [
+              {
+                "x": 820,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends Menu Item Details\nFor Creation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sends Menu Item Details\nFor Creation"
+            ],
+            "id": "7b64bd2d-1888-4871-91e2-3b8eaf676471",
+            "source": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
+            },
+            "target": {
+              "cell": "7b1aaa4c-bc84-467c-b27c-23918517bcaa",
+              "port": "65a13501-a9a2-4205-b461-1b7264b38c74"
+            },
+            "vertices": [
+              {
+                "x": 1220,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Creates New Menu Item",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Creates New Menu Item"
+            ],
+            "id": "0028b615-27ec-420c-b555-f57301345997",
+            "source": {
+              "cell": "7b1aaa4c-bc84-467c-b27c-23918517bcaa",
+              "port": "65a13501-a9a2-4205-b461-1b7264b38c74"
+            },
+            "target": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
+            },
+            "vertices": [
+              {
+                "x": 1210,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log In Credentials Validation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Log In Credentials Validation"
+            ],
+            "id": "35b85e07-d9c9-400c-b151-610a2f0fbe60",
+            "source": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "3f3b5fb9-526e-4d7b-8a68-026d6e721441"
+            },
+            "target": {
+              "cell": "7fcf26a3-7960-4589-8b2b-be584495f054",
+              "port": "dd685683-41ae-4eea-86d0-b4180607fd7b"
+            },
+            "vertices": [
+              {
+                "x": 930,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Request Success\nReturnsAuth Token",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login Request Success\nReturnsAuth Token"
+            ],
+            "id": "d5edc6fd-951b-4fa4-96f4-f89c0880c779",
+            "source": {
+              "cell": "7fcf26a3-7960-4589-8b2b-be584495f054",
+              "port": "dd685683-41ae-4eea-86d0-b4180607fd7b"
+            },
+            "target": {
+              "cell": "858db7f4-f296-4f1c-9a50-45573d107f7c",
+              "port": "3f3b5fb9-526e-4d7b-8a68-026d6e721441"
+            },
+            "vertices": [
+              {
+                "x": 1140,
+                "y": 150
+              },
+              {
+                "x": 1140,
+                "y": 170
+              },
+              {
+                "x": 1120,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "e00a98b3-e16b-40ba-8d6d-260b8c0439bf",
+            "source": {
+              "x": 910,
+              "y": 230
+            },
+            "target": {
+              "x": 910,
+              "y": 460
+            },
+            "vertices": [
+              {
+                "x": 930,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "c550d250-3113-438e-96b9-b84b4a922493",
+            "source": {
+              "x": 880,
+              "y": 70
+            },
+            "target": {
+              "x": 1200,
+              "y": 70
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 110
+              }
+            ]
           },
           {
             "position": {
-              "x": 1128,
-              "y": 240
+              "x": 980,
+              "y": -70
             },
             "size": {
-              "width": 130,
-              "height": 80
+              "width": 110,
+              "height": 110
             },
             "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
+              "text": {
+                "text": "Authorization\nProvider"
               },
-              "bottomLine": {
+              "body": {
+                "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "store",
-            "zIndex": 5,
+            "shape": "process",
             "ports": {
               "groups": {
                 "top": {
@@ -1427,263 +2409,44 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "bceb4473-6498-4357-9e7c-3f18c3b5eb57"
+                  "id": "3f3b5fb9-526e-4d7b-8a68-026d6e721441"
                 },
                 {
                   "group": "right",
-                  "id": "c2a4284d-6947-4402-a93d-d5e076b61c9b"
+                  "id": "99bdd56a-e3d5-4778-a8f0-74e94fba37d8"
                 },
                 {
                   "group": "bottom",
-                  "id": "c46a6a93-60ea-4ecc-bf10-9e3ccae2bdc4"
+                  "id": "dd685683-41ae-4eea-86d0-b4180607fd7b"
                 },
                 {
                   "group": "left",
-                  "id": "06dc8c68-50b8-4aa4-8126-3ace602089e8"
+                  "id": "979f29a4-8792-49e7-b859-55c7eb18f822"
                 }
               ]
             },
-            "id": "c0a7331f-8849-401f-9434-0c95fff6201f",
+            "id": "7fcf26a3-7960-4589-8b2b-be584495f054",
+            "zIndex": 11,
             "data": {
-              "type": "tm.Store",
-              "name": "Store",
+              "type": "tm.Process",
+              "name": "Authorization\nProvider",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "d05dd159-7cc2-449f-b9f1-9c732bc97485",
-            "source": {
-              "x": 373,
-              "y": 260
-            },
-            "target": {
-              "cell": "c6e9fe47-6177-4fcf-a62f-29af84fa7cb2",
-              "port": "7a1fe420-0d26-4e7c-a2f5-2c213d87dd3a"
-            },
-            "vertices": [
-              {
-                "x": 480,
-                "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "ebf77d65-c016-40a4-be5b-a496dbc9f457",
-            "source": {
-              "cell": "c6e9fe47-6177-4fcf-a62f-29af84fa7cb2",
-              "port": "7a1fe420-0d26-4e7c-a2f5-2c213d87dd3a"
-            },
-            "target": {
-              "cell": "a48bb20c-e3ab-4f48-84d1-4d97f5a3896d",
-              "port": "c5c6d7c1-73ca-4574-a571-a3926be59784"
-            },
-            "vertices": [
-              {
-                "x": 480,
-                "y": 320
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "3e7996bd-4a4d-48d1-974a-5c0534c28df9",
-            "source": {
-              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588"
-            },
-            "target": {
-              "cell": "f775f73b-b304-4bbf-88c4-7836112991ec",
-              "port": "c6a265e5-3889-47f6-80b5-84e182e534bc"
-            },
-            "vertices": [
-              {
-                "x": 760,
-                "y": 140
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "2018ed0b-fc10-4f35-b229-3ad88a13cfaa",
-            "source": {
-              "x": 870,
-              "y": 30
-            },
-            "target": {
-              "cell": "55c0ded0-a3c7-4a3e-90af-649806332588",
-              "port": "99f15170-f5ea-4d96-b0d1-84513f23f231"
             }
           }
         ]
-      },
-      {
-        "id": 2,
-        "title": "DF3 - Manager Accesses Basic Sales Reports",
-        "diagramType": "STRIDE",
-        "placeholder": "DF3 - Manager Accesses Basic Sales Reports",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.5.0",
-        "cells": []
-      },
-      {
-        "id": 3,
-        "title": "DF4 - Administrator Adds New Menu Item",
-        "diagramType": "STRIDE",
-        "placeholder": "DF4 - Administrator Adds New Menu Item",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.5.0",
-        "cells": []
       }
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 20
+    "threatTop": 48
   }
 }
