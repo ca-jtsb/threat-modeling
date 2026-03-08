@@ -1230,16 +1230,16 @@
           },
           {
             "position": {
-              "x": 760,
-              "y": -50
+              "x": 745,
+              "y": -90
             },
             "size": {
-              "width": 100,
-              "height": 120
+              "width": 130,
+              "height": 130
             },
             "attrs": {
               "text": {
-                "text": "Authenticate\n& "
+                "text": "Authenticate \n& Authorize"
               },
               "body": {
                 "stroke": "#333333",
@@ -1335,7 +1335,7 @@
             "id": "f775f73b-b304-4bbf-88c4-7836112991ec",
             "data": {
               "type": "tm.Process",
-              "name": "Authenticate\n& Authorize",
+              "name": "Authenticate \n& Authorize",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1571,8 +1571,8 @@
             },
             "vertices": [
               {
-                "x": 850,
-                "y": 140
+                "x": 860,
+                "y": 120
               }
             ]
           },
@@ -1623,8 +1623,8 @@
             },
             "vertices": [
               {
-                "x": 750,
-                "y": 140
+                "x": 760,
+                "y": 120
               }
             ]
           },
@@ -1837,40 +1837,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "85519274-3bc6-4b32-a1f7-104ec10a78e9",
-            "source": {
-              "x": 600,
-              "y": 50
-            },
-            "target": {
-              "x": 1020,
-              "y": 60
-            },
-            "vertices": [
-              {
-                "x": 810,
-                "y": 120
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -2059,6 +2025,85 @@
                 "y": 250
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "85519274-3bc6-4b32-a1f7-104ec10a78e9",
+            "source": {
+              "x": 600,
+              "y": 30
+            },
+            "target": {
+              "x": 1020,
+              "y": 30
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 90
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       },
