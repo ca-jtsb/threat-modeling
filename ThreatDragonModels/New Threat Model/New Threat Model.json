@@ -1320,7 +1320,7 @@
         "cells": [
           {
             "position": {
-              "x": 29.999999999999957,
+              "x": 39.99999999999996,
               "y": -20
             },
             "size": {
@@ -2001,6 +2001,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Display Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Display Data"
+            ],
+            "id": "f8930634-2041-45f6-958f-a1cdd826d5c9",
+            "source": {
+              "cell": "90ae8243-ada2-4b60-b295-7a639c32d387",
+              "port": "062cddf0-c90b-4d36-8bd6-8d8862410339"
+            },
+            "target": {
+              "cell": "a9ed51fc-096e-4b8b-9ffd-d26795602677",
+              "port": "a3e98ea2-7e93-4f2c-804f-69c52805ffd2"
+            },
+            "vertices": [
+              {
+                "x": -40,
+                "y": 100
+              }
+            ]
+          },
+          {
             "position": {
               "x": 709,
               "y": -20
@@ -2370,6 +2422,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -2453,7 +2506,6 @@
               ]
             },
             "id": "a9ed51fc-096e-4b8b-9ffd-d26795602677",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "Manager",
@@ -2486,7 +2538,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Login and\nRequest Data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2500,7 +2552,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Login and\nRequest Data"
             ],
             "id": "c92f1b42-6d27-4617-b118-3d851d9317c4",
             "source": {
@@ -2510,7 +2562,13 @@
             "target": {
               "cell": "90ae8243-ada2-4b60-b295-7a639c32d387",
               "port": "062cddf0-c90b-4d36-8bd6-8d8862410339"
-            }
+            },
+            "vertices": [
+              {
+                "x": -40,
+                "y": -40
+              }
+            ]
           }
         ]
       },
