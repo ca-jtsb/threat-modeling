@@ -1360,6 +1360,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -1443,7 +1444,6 @@
               ]
             },
             "id": "c0a7331f-8849-401f-9434-0c95fff6201f",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Store",
