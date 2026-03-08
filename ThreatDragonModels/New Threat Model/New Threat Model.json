@@ -15,7 +15,7 @@
         "diagramType": "STRIDE",
         "placeholder": "DF1 - Customer Places an Order",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "cells": [
           {
             "position": {
@@ -869,7 +869,7 @@
         "diagramType": "STRIDE",
         "placeholder": "DF2 - Barista Updates Order Status",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "cells": []
       },
       {
@@ -878,7 +878,7 @@
         "diagramType": "STRIDE",
         "placeholder": "DF3 - Manager Accesses Basic Sales Reports",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.5.0",
+        "version": "2.6.0",
         "cells": []
       },
       {
@@ -910,6 +910,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -993,7 +994,6 @@
               ]
             },
             "id": "c5438c83-a83c-44d3-b1dd-b09751a103c1",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -1124,19 +1124,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": [
-                {
-                  "id": "43aad8d5-0d60-4d5c-b35d-5202fc98865a",
-                  "title": "Customer to Staff Privilege Escalation",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Elevation of privilege",
-                  "description": "A customer could exploit vulnerabilities in the client interface to gain staff-level privileges and access staff-only features.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 25,
-                  "score": "3"
-                },
                 {
                   "id": "f50081aa-b68d-4712-9bcf-aeae20b0e0a2",
                   "title": "Staff Account Spoofing",
@@ -2343,6 +2330,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -2426,7 +2414,6 @@
               ]
             },
             "id": "7fcf26a3-7960-4589-8b2b-be584495f054",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Authorization\nProvider",
@@ -2447,6 +2434,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 48
+    "threatTop": 49
   }
 }
